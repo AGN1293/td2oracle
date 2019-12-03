@@ -10,11 +10,11 @@ import org.slf4j.LoggerFactory
 object Main extends App {
   private val logger = LoggerFactory.getLogger(getClass)
 
-  val sourceTopic = "TERADATA-POPS-P-OSUSR_7WK_DEVICE-J-INIT"
-  val sinkTopic = "POPS-P-OSUSR_7WK_DEVICE-J-TD2ORACLE-OUT"
+  val sourceTopic = "TEST__DEVICE-IN"
+  val sinkTopic = "TEST__DEVICE-OUT"
 
   val appName = "TD2ORACLE_OSUSR_7WK_DEVICE"
-  val bootstrapServers = "ESDC1CSPLA290:9092"
+  val bootstrapServers = "localhost:9092"
 
   val config: Properties = {
     val p = new Properties()

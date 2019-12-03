@@ -21,3 +21,8 @@ libraryDependencies ++= {
       "org.apache.kafka" % "kafka-streams-test-utils" % "2.3.1" % Test
     )
 }
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}

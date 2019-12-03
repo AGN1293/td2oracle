@@ -18,7 +18,9 @@ object Transformation {
   def jsonToClass(input: String): Option[Json] = {
     val decoded = decode[Json](input)
     decoded match {
-      case Right(msg) => Some(msg)
+      case Right(msg) =>
+        logger.info(s"[TD2ORACLE_OSUSR_7WK_DEVICE] Processing message with ID: {${msg.payload.ID}}")
+        Some(msg)
       case Left(left) =>
         logger.debug(s"[TD2ORACLE_OSUSR_7WK_DEVICE] Error: $left")
         logger.debug(s"[TD2ORACLE_OSUSR_7WK_DEVICE] Couldn't parse the message: $input")
