@@ -47,9 +47,9 @@ object Model {
                            CLIENTID: String,
                            BASEID: String,
                            POS: String,
-                           GG_T_TYPE_ORIGIN: String,
-                           GG_T_TIMESTAMP_ORIGIN: String,
-                           TD_T_TIMESTAMP_ORIGIN: String
+                           GG_T_TYPE: String,
+                           GG_T_TIMESTAMP: String,
+                           TD_T_TIMESTAMP: String
                          )
 
   case class PayloadOutput(
@@ -74,9 +74,9 @@ object Model {
                             CLIENTID: Int,
                             BASEID: Int,
                             POS: String,
-                            GG_T_TYPE_ORIGIN: String,
-                            GG_T_TIMESTAMP_ORIGIN: String,
-                            TD_T_TIMESTAMP_ORIGIN: String
+                            GG_T_TYPE: String,
+                            GG_T_TIMESTAMP: String,
+                            TD_T_TIMESTAMP: String
                           )
 
 }

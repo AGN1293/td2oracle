@@ -10,8 +10,8 @@ import org.slf4j.LoggerFactory
 object Main extends App {
   private val logger = LoggerFactory.getLogger(getClass)
 
-  val sourceTopic = "PENDING"
-  val sinkTopic = "PENDING"
+  val sourceTopic = "TD-ORACLE-DEVICE-INIT"
+  val sinkTopic = "TD-ORACLE-DEVICE-INS-OUT"
 
   val appName = "TD2ORACLE_OSUSR_7WK_DEVICE"
   val bootstrapServers = "ESDC1CSPLA290:9092"
