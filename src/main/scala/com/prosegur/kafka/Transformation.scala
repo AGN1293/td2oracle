@@ -64,6 +64,7 @@ object Transformation {
       COUNTRYID,
       CENTROID,
       CREATEDBY,
+      value.CREATEDON,
       EDITEDBY,
       value.EDITEDON,
       DELETEDBY,
